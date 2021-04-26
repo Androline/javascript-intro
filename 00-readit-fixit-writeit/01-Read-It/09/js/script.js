@@ -16,7 +16,7 @@ const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
 const parseTitle = title => {
   title = title.toLowerCase();
   if (title.startsWith(`the`)) {
-    console.log(`Film met THE:`, title);
+    console.log(`Film with THE:`, title);
     title = title.toUpperCase();
   }
   return title;

@@ -10,14 +10,14 @@ const movies = [
   `One Flew Over the Cuckoo's Nest`,
   `Lawrence of Arabia`,
 ];
-
-const wrapWithTag = (content, tagname) => {
-  return `<${tagname}>${content}</${tagname}>`;
+// Wrapping movies with the list tag //
+const wrapMovieTitleWithListTag = (movieTitle, liTag) => {
+  return `<${liTag}>${movieTitle}</${liTag}>`;
 };
 
 const parseTitle = title => {
   const lowerTitle = title.toLowerCase();
-  const wrapped = wrapWithTag(lowerTitle, `li`);
+  const wrapped = wrapMovieTitleWithListTag(lowerTitle, `li`);
   document.write(wrapped);
 };
 
