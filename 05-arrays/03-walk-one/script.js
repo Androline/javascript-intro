@@ -26,6 +26,11 @@
         "cherry",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        fruits.forEach(func)
+        function func(item, index){
+            console.log(index + 1 + ": " + item);
+        }
+    });
 
 })();

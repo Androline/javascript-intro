@@ -12,7 +12,7 @@
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
-    var performOperation = function(operation) {
+    let performOperation = function(operation) {
         let opOne = parseInt(document.getElementById("op-one").value);
         let opTwo = parseInt(document.getElementById("op-two").value);
         let result;
